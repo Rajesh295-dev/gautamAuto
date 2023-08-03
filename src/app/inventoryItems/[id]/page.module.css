@@ -1,0 +1,130 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(67, 130, 103);
+}
+
+.top {
+  max-width: 100%;
+  position: relative;
+}
+.img {
+}
+.imgDesc {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  padding: 20px;
+  color: white;
+}
+
+.upDesc {
+  z-index: 2;
+}
+
+.imgDesc .upDesc h2 {
+  margin-left: 40px;
+}
+
+.imgDesc .downDesc {
+  width: 100%;
+  margin-top: 35%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  justify-content: space-around;
+}
+
+.imgDesc .downDesc .speed {
+  margin-left: 90px;
+}
+
+.featureContainer {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 4;
+  padding: 20px;
+}
+
+.keyFeatures {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+}
+
+.featureCard {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.featureCard h3 p {
+  padding: 10px;
+}
+.featureImg {
+  width: 250px;
+  object-fit: contain;
+}
+
+.offer {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+  position: relative;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+.offerDesc {
+  width: 60%;
+  margin-left: 25%;
+  text-align: center;
+}
+.offerButton {
+  border: solid(black);
+  background-color: rgb(17, 149, 67);
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .imgDesc {
+    font-size: 10px;
+  }
+
+  .downDesc {
+    gap: 50px;
+  }
+
+  .imgDesc .downDesc {
+    margin-top: 15%;
+  }
+
+  .imgDesc .downDesc .speed {
+    margin-left: 10px;
+  }
+}

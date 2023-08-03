@@ -1,0 +1,64 @@
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  margin: 20px;
+  -webkit-box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+}
+
+.imgContainer {
+  margin-left: 20px;
+  position: relative;
+}
+
+.content {
+  width: 50%;
+  height: 250px;
+  margin: 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 2px solid darkgreen;
+}
+
+.offerButton {
+  border: solid(black);
+  background-color: rgb(17, 149, 67);
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Medium devices (768px to 991px) */
+@media screen and (max-width: 9991px) {
+  .content {
+    font-size: 15px;
+  }
+  .imgContainer {
+    margin-top: 20px;
+  }
+}
+
+/* Small devices (576px to 767px) */
+@media screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .img {
+    width: 200px;
+    height: 100px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0px 0px;
+  }
+}
