@@ -2,7 +2,7 @@
 
 ## Introduction
 
-GautamAuto is a modern and innovative automobile dealership company that prioritizes interactiveness and responsiveness in its web platform. By utilizing cutting-edge programming languages and technologies such as JavaScript, Next.js, React, REST API, and MongoDB, GautamAuto ensures an exceptional user experience for its customers.
+GautamAuto is a modern and innovative automobile dealership company prototypr website that prioritizes interactiveness and responsiveness in its web platform. By utilizing cutting-edge programming languages and technologies such as JavaScript, Next.js, React, REST API, and MongoDB, GautamAuto ensures an exceptional user experience for its customers.
 
 ## JavaScript: Interactivity at its Best
 
