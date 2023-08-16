@@ -3,18 +3,19 @@
 ## Introduction
 
 It is a modern and innovative automobile dealership company prototype website that prioritizes interactiveness and responsiveness in its web platform. By utilizing cutting-edge programming languages and technologies such as 
-# Programming languages:
+## Programming languages:
 - HTML, 
 - CSSS, 
 - JavaScript,
-   # Frameworks:
+
+ ## Frameworks:
 REACT
 - Next.js
-# Database:
+## Database:
 - MongoDB
-# Payment System
+## Payment System
 - PayPal
-# Authentication
+## Authentication
 - Google
-# & bcrypt to hash the password 
+## & bcrypt to hash the password 
 
