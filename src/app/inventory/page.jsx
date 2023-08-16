@@ -30,7 +30,7 @@ const Products = () => {
           <Link
             className={styles.product}
             key={product._id}
-            href={`/inventoryItems/${product._id}`}
+            href={`/inventory/${product._id}`}
           >
             <Image
               className={styles.img}

@@ -18,7 +18,6 @@ async function getData(id) {
 
 const inventoryItems = async ({ params }) => {
   const feature = await getData(params.id);
-  console.log(feature);
 
   return (
     <div className={styles.container}>
@@ -135,7 +134,7 @@ const inventoryItems = async ({ params }) => {
             </p>
           </div>
 
-          <Link href={`/cart/${feature._id}`}>
+          <Link key={feature._id} href={`/cart/${feature._id}`}>
             <button className={styles.offerButton}>GET THIS OFFER</button>
           </Link>
         </div>

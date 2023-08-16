@@ -2,9 +2,9 @@ import NextAuth from "next-auth";
 import GithubProvider from "next-auth/providers/github";
 import GoogleProvider from "next-auth/providers/google";
 import CredentialsProvider from "next-auth/providers/credentials";
-import User from "@/models/User";
-import connect from "@/utils/db";
-import bcrypt from "bcryptjs";
+import User from "../../../../models/User";
+import connect from "../../../../util/db";
+import bcrypt from "bcrypt";
 
 const handler = NextAuth({
     providers: [
@@ -49,7 +49,7 @@ const handler = NextAuth({
         }),
     ],
     pages: {
-        error: "/dashboard/login",
+        error: "/AdminBoard/login",
     },
 
 });

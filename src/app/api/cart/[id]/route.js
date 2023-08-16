@@ -10,7 +10,7 @@ export const GET = async (request, { params }) => {
     try {
         await connect();
 
-        const cartItem = await Inventory.findById(id);
+        const cartItem = await Inventory.findOne({ _id: id });
 
         return new NextResponse(JSON.stringify(cartItem), { status: 200 });
     } catch (err) {

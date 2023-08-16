@@ -21,7 +21,13 @@ const Footer = () => {
         </div>
         <div className={styles.card}>
           <h1 className={styles.title}>FIND OUR DEALERSHIPS</h1>
-          <p className={styles.text}>879</p>
+          <p className={styles.text}>
+            320 N. DuPont Highway
+            <br />
+            New Castle, DE 19720
+            <br />
+            (877)967-5464
+          </p>
           <p className={styles.text}>
             3282 North DuPont Highway.
             <br />

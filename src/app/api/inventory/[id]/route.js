@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import connect from "../../../../util/db";
 import Inventory from "../../../../models/Inventory";
 
-
+//GET SINGLE PRODUCT
 export const GET = async (request, { params }) => {
     const { id } = params;
 
@@ -16,6 +16,8 @@ export const GET = async (request, { params }) => {
         return new NextResponse("Database Error", { status: 500 });
     }
 };
+
+
 
 export const PUT = async (request, { params }) => {
 

@@ -2,7 +2,7 @@
 import Image from "next/image";
 import styles from "../styles/Navbar.module.css";
 import DarkModeToggle from "../components/DarkModeToggle/DarkModeToggle";
-//import { signOut, useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 import Link from "next/link";
 import React from "react";
 
@@ -28,10 +28,15 @@ const links = [
     title: "Contact",
     url: "/contact",
   },
+  {
+    id: 5,
+    title: "AdminBoard",
+    url: "/AdminBoard",
+  },
 ];
 
 const Navbar = () => {
-  //const session = useSession();
+  const session = useSession();
   return (
     <div className={styles.container}>
       <div className={styles.item}>
@@ -45,9 +50,24 @@ const Navbar = () => {
             {link.title}
           </Link>
         ))}
-      </div>
+        <Link href="/cart/1" className={styles.cartImg}>
+          <Image src="/img/cart.png" alt="Service 1" width={250} height={200} />
+        </Link>
 
-      <button
+        {session.status === "authenticated" && (
+          <button className={styles.logout} onClick={signOut}>
+            Logout
+          </button>
+        )}
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;
+
+/*
+<button
         className={styles.logout}
         onClick={() => {
           console.log("logged out");
@@ -55,8 +75,6 @@ const Navbar = () => {
       >
         Logout
       </button>
-    </div>
-  );
-};
 
-export default Navbar;
+      <Image src="/img/cart.png" alt="Service 1" width={250} height={200} />
+      */

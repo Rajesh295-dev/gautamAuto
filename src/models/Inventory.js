@@ -34,6 +34,15 @@ const InventorySchema = new mongoose.Schema(
             required: true,
             maxlength: 30,
         },
+        desc: {
+            type: String,
+            required: true,
+            maxlength: 60,
+        },
+        username: {
+            type: String,
+            required: true,
+        },
 
     },
     { timestamps: true }

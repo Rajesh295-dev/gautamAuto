@@ -1,12 +1,11 @@
 "use client";
 //import styles from "/styles/Cart.module.css";
-import { notFound, useParams } from "next/navigation";
+import { notFound, useRouter } from "next/navigation";
 import getCart from "@/app/libs/getCart";
 import styles from "./page.module.css";
 import Image from "next/image";
 import axios from "axios";
 //import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 import { useEffect, useState } from "react";
 import {
@@ -27,7 +26,6 @@ async function getData(id) {
     return notFound();
   }
   return res.json();
-  console.log(res);
 }
 */
 
@@ -41,10 +39,9 @@ const feature = {
   speed: "770mph",
 };
 
-const Cart = () => {
+const Cart = async () => {
   // initiate both request in parallel
 
-  console.log("this is the cart items:", feature);
   const router = useRouter();
 
   const createOrder = async (data) => {
