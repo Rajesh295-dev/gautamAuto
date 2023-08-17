@@ -7,7 +7,7 @@ const ServiceCard = () => {
       <div className={styles.serviceCard}>
         <div className={styles.serviceImage}>
           <Image
-            src="/serviceImg/lowIn.jpeg"
+            src="/serviceImg/lowin.jpeg"
             alt="Service 1"
             width={250}
             height={200}
