@@ -7,7 +7,7 @@ It is a modern and innovative automobile dealership company prototype website th
 ## Programming languages:
 
 - HTML,
-- CSSS,
+- CSS,
 - JavaScript,
 
 ## Frameworks:
