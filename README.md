@@ -12,8 +12,7 @@ It is a modern and innovative automobile dealership company prototype website th
 
 ## Frameworks:
 
-REACT
-
+- REACT
 - Next.js
 
 ## Database:
